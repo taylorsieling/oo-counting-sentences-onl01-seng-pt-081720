@@ -30,7 +30,6 @@ class String
 
   def count_sentences
     self.split(/[.!?]/).reject {|array|array/empty?}.count
-    binding.pry
   end
   
 end
