@@ -29,7 +29,7 @@ class String
   end
 
   def count_sentences
-    self.split(/[.!?]/).count
+    self.split(/[.!?]/).reject {|array|array/empty?}.count
     binding.pry
   end
   
